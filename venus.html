@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus</title>
+</head>
+
+<body>
+
+
+    <h1>Venus</h1>
+
+    <!-- Put your Venus image here -->
+    <img src="images/venus.webp" alt="Venus" width="400">
+
+    <div class="box-venus">
+        <h2 ;"> Basic Information</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Venus is the second planet from the Sun and is similar to Earth in size, mass, and overall composition.
+            Because of these similarities, Venus is sometimes called Earth's "sister planet." However, its environment
+            is extremely different from Earth's. Venus has a diameter of about 12,104 kilometers and is covered by a
+            thick atmosphere and clouds that make its surface difficult to observe from space.
+        </p>
+    </div>
+
+    <div class="box-venus">
+        <h2> Atmosphere & Temperature</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Venus has the hottest surface of any planet in the Solar System. Its atmosphere is made mostly of carbon
+            dioxide, with thick clouds of sulfuric acid. The dense atmosphere creates an extreme greenhouse effect that
+            traps enormous amounts of heat. Surface temperatures remain around 465°C (870°F), hot enough to melt lead.
+            The atmospheric pressure on Venus is also roughly 90 times greater than Earth's surface pressure
+        </p>
+    </div>
+
+    <div class="box-venus">
+        <h4>What's your weight on Venus ?</h4>
+        <input type="number" id="theNumber" size="10" />
+        <button id="weight">Confirm</button>
+        <p id="weight-display"></p>
+        <script>
+            const button = document.getElementById("weight");
+            button.addEventListener("click", convertWeight);
+            function convertWeight() {
+                const weight = document.getElementById("theNumber").value;
+                const text = document.getElementById("weight-display");
+                text.innerHTML = "You would weigh: " + Math.round(weight * 0.9 * 10) / 10 + " lbs on Venus";
+            }
+        </script>
+    </div>
+
+    <div class="box-venus">
+        <h2> Surface & Geography</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            The surface of Venus contains mountains, valleys, plains, volcanoes, and large impact craters. Much of the
+            planet appears to have been shaped by volcanic activity. Venus has thousands of volcanoes, although
+            scientists are still studying how many remain active today. The planet's surface is hidden beneath its thick
+            clouds, so spacecraft have used radar to map the terrain.
+        </p>
+    </div>
+
+    <a href="test.html">Go back to the Solar System</a>
+
+</body>
+
+</html>

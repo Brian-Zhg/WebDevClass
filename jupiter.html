@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter</title>
+</head>
+
+<body>
+
+
+    <h1>Jupiter</h1>
+
+    <!-- Put your Jupiter image here -->
+    <img src="images/jupiter.webp" alt="Jupiter" width="400">
+
+    <div class="box-jupiter">
+        <h2> Basic Information</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Jupiter is the fifth planet from the Sun and is the largest planet in the Solar System. It is a gas giant
+            composed primarily of hydrogen and helium and does not have a solid surface like Earth or Mars. Jupiter has
+            a diameter of about 139,820 kilometers, making it more than 11 times wider than Earth. Its enormous size
+            gives it a powerful gravitational influence over many objects in the Solar System.
+        </p>
+    </div>
+
+    <div class="box-jupiter">
+        <h2> Atmosphere & Temperature</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Jupiter has a thick atmosphere made mostly of hydrogen and helium. Its atmosphere contains colorful bands of
+            clouds that move around the planet at extremely high speeds. Jupiter experiences enormous storms, including
+            the famous Great Red Spot, a massive storm that has existed for centuries. Winds on Jupiter can reach speeds
+            of hundreds of kilometers per hour.
+        </p>
+    </div>
+
+     <div class="box-jupiter">
+        <h4>What's your weight on Jupiter ?</h4>
+        <input type="number" id="theNumber" size="10" />
+        <button id="weight">Confirm</button>
+        <p id="weight-display"></p>
+        <script>
+            const button = document.getElementById("weight");
+            button.addEventListener("click", convertWeight);
+            function convertWeight() {
+                const weight = document.getElementById("theNumber").value;
+                const text = document.getElementById("weight-display");
+                text.innerHTML = "You would weigh: " + Math.round(weight * 2.36 * 10) / 10 + " lbs on Jupiter";
+            }
+        </script>
+    </div>
+
+    <div class="box-jupiter">
+        <h2> Surface & Geography</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Jupiter does not have a solid surface that a spacecraft or person could stand on. Instead, its atmosphere
+            becomes increasingly dense as you travel deeper into the planet. Eventually, the pressure and temperature
+            become extreme. Scientists believe Jupiter has a dense core surrounded by layers of metallic and liquid
+            hydrogen.
+        </p>
+    </div>
+
+   
+    <a href="test.html">Go back to the Solar System</a>
+
+</body>
+
+</html>

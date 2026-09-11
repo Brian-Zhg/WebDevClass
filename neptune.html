@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Neptune</title>
+    
+</head>
+
+<body>
+    <!DOCTYPE html>
+
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Neptune</title>
+    </head>
+
+    <body>
+
+
+        <h1>Neptune</h1>
+
+        <!-- Put your Neptune image here -->
+        <img style="margin: 0 auto;" src="images/neptune.webp" alt="Neptune" width="400">
+
+        <div class="box-neptune">
+            <h2> Basic Information</h2>
+        </div>
+        <div id="textBox" style="background-color: #F5EDE3;">
+            <p>
+                Neptune is the eighth and farthest known planet from the Sun. It is an ice giant and is similar in size
+                and composition to Uranus. Neptune has a diameter of about 49,244 kilometers and is roughly four times
+                wider than Earth. Because it is so far from the Sun, Neptune receives very little sunlight and is one of
+                the coldest planetary environments in the Solar System.
+            </p>
+        </div>
+
+        <div class="box-neptune">
+            <h2> Atmosphere & Temperature</h2>
+        </div>
+        <div id="textBox" style="background-color: #F5EDE3;">
+            <p>
+                Neptune has an atmosphere made primarily of hydrogen and helium, with methane contributing to its blue
+                color. Despite receiving very little energy from the Sun, Neptune has some of the fastest winds in the
+                Solar System. Winds can reach speeds of more than 2,000 kilometers per hour. The planet also experiences
+                enormous storms that appear as dark spots in its atmosphere.
+            </p>
+        </div>
+        <div class="box-neptune">
+            <h2> Surface & Geography</h2>
+        </div>
+
+        <div class="box-neptune">
+            <h4>What's your weight on Neptune ?</h4>
+            <input type="number" id="theNumber" size="10" />
+            <button id="weight">Confirm</button>
+            <p id="weight-display"></p>
+            <script>
+                const button = document.getElementById("weight");
+                button.addEventListener("click", convertWeight);
+                function convertWeight() {
+                    const weight = document.getElementById("theNumber").value;
+                    const text = document.getElementById("weight-display");
+                    text.innerHTML = "You would weigh: " + Math.round(weight * 1.12 * 10) / 10 + " lbs on Mercury";
+                }
+            </script>
+        </div>
+
+        <div id="textBox" style="background-color: #F5EDE3;">
+            <p>
+                Neptune does not have a solid surface. Beneath its atmosphere is a dense interior containing water,
+                ammonia, and methane under tremendous pressure. The planet likely has a rocky core surrounded by a thick
+                layer of hot, dense material. Neptune's interior structure is very different from that of the rocky
+                planets closer to the Sun.
+            </p>
+        </div>
+
+
+        <a href="test.html">Go back to the Solar System</a>
+
+    </body>
+
+    </html>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+a{
+    padding: 4px;
+    background-color: bisque;
+    
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-mercury {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;;
+    border-radius: 10px;
+    background-color: rgb(224, 166, 5);
+     margin: 0 auto;
+}
+
+.box-venus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(230, 180, 100);
+    margin: 0 auto;
+}
+
+.box-earth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(70, 150, 190);
+    margin: 0 auto;
+}
+
+.box-mars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(190, 75, 45);
+    margin: 0 auto;
+}
+
+.box-jupiter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(190, 145, 105);
+    margin: 0 auto;
+}
+
+.box-saturn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(210, 190, 145);
+    margin: 0 auto;
+}
+
+.box-uranus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(120, 200, 210);
+    margin: 0 auto;
+}
+
+.box-neptune {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(55, 90, 180);
+    margin: 0 auto;
+}
+
+#textBox {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border: 2px solid black;;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h1{
+    text-align: center;
+}

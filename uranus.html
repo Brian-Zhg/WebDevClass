@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranus</title>
+</head>
+
+<body>
+
+
+    <h1>Uranus</h1>
+
+    <!-- Put your Uranus image here -->
+    <img src="images/uranus.webp" alt="Uranus" width="400">
+
+    <div class="box-uranus">
+        <h2> Basic Information</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Uranus is the seventh planet from the Sun and is classified as an ice giant. It is much larger than Earth
+            but smaller than Jupiter and Saturn. Uranus has a diameter of about 50,724 kilometers. The planet has a pale
+            blue-green appearance because methane in its upper atmosphere absorbs much of the red light from sunlight.
+        </p>
+    </div>
+
+    <div class="box-uranus">
+        <h2> Atmosphere & Temperature</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Uranus has an atmosphere composed mainly of hydrogen and helium, with methane making up a smaller but
+            important portion. Methane gives Uranus its blue-green color. Uranus has some of the coldest atmospheric
+            temperatures in the Solar System, with temperatures near the cloud tops dropping to around -224°C (-371°F).
+        </p>
+    </div>
+    <div class="box-uranus">
+        <h2> Surface & Geography</h2>
+    </div>
+
+    <div class="box-uranus">
+        <h4>What's your weight on Uranus?</h4>
+        <input type="number" id="theNumber" size="10" />
+        <button id="weight">Confirm</button>
+        <p id="weight-display"></p>
+        <script>
+            const button = document.getElementById("weight");
+            button.addEventListener("click", convertWeight);
+            function convertWeight() {
+                const weight = document.getElementById("theNumber").value;
+                const text = document.getElementById("weight-display");
+                text.innerHTML = "You would weigh: " + Math.round(weight * 0.889 * 10) / 10 + " lbs on Uranus";
+            }
+        </script>
+    </div>
+
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Uranus does not have a solid surface. Beneath its atmosphere is a thick layer of hot, dense material
+            containing water, ammonia, and methane. Because these substances exist under enormous pressure, they behave
+            very differently from their familiar forms on Earth. Uranus is called an ice giant because these materials
+            make up a much larger portion of its interior than they do in gas giants like Jupiter and Saturn.
+        </p>
+    </div>
+
+    <a href="test.html">Go back to the Solar System</a>
+
+</body>
+
+</html>

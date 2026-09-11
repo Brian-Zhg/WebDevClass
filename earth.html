@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+</head>
+
+<body>
+
+
+    <h1>Earth</h1>
+
+    <!-- Put your Earth image here -->
+    <img src="images/earth.webp" alt="Earth" width="400">
+
+    <div class="box-earth">
+        <h2> Basic Information</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Earth is the third planet from the Sun and the largest of the four terrestrial planets. It is the only
+            planet currently known to support life and has a diverse environment containing oceans, continents,
+            mountains, deserts, forests, and polar ice. Earth has a diameter of about 12,742 kilometers and is the only
+            known planet with large amounts of stable liquid water on its surface.
+        </p>
+    </div>
+
+    <div class="box-earth">
+        <h2> Atmosphere & Temperature</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Earth has an atmosphere made primarily of nitrogen and oxygen, with smaller amounts of other gases including
+            carbon dioxide and water vapor. The atmosphere protects life from harmful radiation, helps regulate
+            temperature, and allows liquid water to exist on the surface. Earth's climate varies greatly between
+            different regions and includes deserts, tropical environments, temperate areas, and polar regions.
+        </p>
+    </div>
+    <div class="box-earth">
+        <h4>What's your weight on Earth ?</h4>
+        <input type="number" id="theNumber" size="10" />
+        <button id="weight">Confirm</button>
+        <p id="weight-display"></p>
+        <script>
+            const button = document.getElementById("weight");
+            button.addEventListener("click", convertWeight);
+            function convertWeight() {
+                const weight = document.getElementById("theNumber").value;
+                const text = document.getElementById("weight-display");
+                text.innerHTML = "You would weigh: " + weight + " lbs on Earth";
+            }
+        </script>
+    </div>
+    <div class="box-earth">
+        <h2> Surface & Geography</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Earth's surface is constantly changing because of plate tectonics, erosion, volcanic activity, and other
+            geological processes. The planet contains seven major continents and enormous oceans. Earth also has
+            mountains, valleys, caves, volcanoes, glaciers, and deep ocean trenches. Mount Everest is the highest point
+            above sea level, while the Mariana Trench contains some of the deepest known areas of Earth's oceans.
+        </p>
+    </div>
+
+    
+    <a href="test.html">Go back to the Solar System</a>
+
+</body>
+
+</html>

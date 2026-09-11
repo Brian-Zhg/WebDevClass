@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercury</title>
+</head>
+<style>
+    body {
+        background-color: rgb(206, 132, 132);
+    }
+</style>
+
+<body>
+
+
+    <h1>Welcome to Mercury</h1>
+
+    <!-- Put your Mercury image here -->
+    <div style="text-align: center;">
+        <img src="images/mercury.webp" alt="Mercury" width="400">
+    </div>
+
+    <div class="box-mercury">
+        <h2 ;"> Basic Information</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Mercury is the first planet from the Sun and the smallest planet in the Solar System. It is a terrestrial
+            planet, meaning it has a solid, rocky surface like Venus, Earth, and Mars. Mercury has a diameter of about
+            4,880 kilometers, making it only slightly larger than Earth's Moon. Because it is so close to the Sun,
+            Mercury completes an orbit in just 88 Earth days. Despite being the closest planet to the Sun, Mercury is
+            not the hottest planet in the Solar System.
+        </p>
+    </div>
+
+    <div class="box-mercury">
+        <h2 ;"> Atmosphere & Temperature</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Mercury does not have a traditional atmosphere like Earth. Instead, it has an extremely thin layer of gases
+            called an exosphere. The exosphere contains small amounts of oxygen, sodium, hydrogen, helium, and
+            potassium. Because Mercury has almost no atmosphere to distribute and retain heat, its temperatures change
+            dramatically. During the day, temperatures can reach around 430°C (800°F), while nighttime temperatures can
+            fall to around -180°C (-290°F).
+        </p>
+    </div>
+
+    <div class="box-mercury">
+        <h4>What's your weight on Mercury ?</h4>
+        <input type="number" id="theNumber" size="10" />
+        <button id="weight">Confirm</button>
+        <p id="weight-display"></p>
+        <script>
+            const button = document.getElementById("weight");
+            button.addEventListener("click", convertWeight);
+            function convertWeight() {
+                const weight = document.getElementById("theNumber").value;
+                const text = document.getElementById("weight-display");
+                text.innerHTML = "You would weigh: " + Math.round(weight * 0.378 * 10) / 10 + " lbs on Mercury";
+            }
+        </script>
+    </div>
+    
+    <div class="box-mercury">
+        <h2 ;"> Surface & Geography</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Mercury has a heavily cratered, rocky surface that resembles the surface of Earth's Moon. Its craters were
+            created by collisions with asteroids and other objects over billions of years. Mercury also has large cliffs
+            called scarps, which formed as the planet's interior cooled and contracted. One of its largest features is
+            the Caloris Basin, an enormous impact crater approximately 1,500 kilometers wide.
+        </p>
+    </div>
+
+    
+    <a href="test.html">Go back to the Solar System</a>
+
+</body>
+
+</html>

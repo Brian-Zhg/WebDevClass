@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+</head>
+<style>
+
+</style>
+
+<body>
+
+
+    <h1>Mars</h1>
+
+    <!-- Put your Mars image here -->
+    <img src="images/marz.webp" alt="Mars" width="400">
+
+    <div class="box-mars">
+        <h2 ;"> Basic Information</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Mars is the fourth planet from the Sun and is often called the "Red Planet" because iron minerals in its
+            surface rocks and dust have oxidized, or essentially rusted, giving the planet its reddish appearance. It is
+            a terrestrial planet, meaning it has a solid rocky surface like Earth, Venus, and Mercury. Mars is smaller
+            than Earth, with a diameter of about 6,779 kilometers, roughly half of Earth's diameter. Its lower gravity
+            means that a person who weighs 100 pounds on Earth would weigh about 38 pounds on Mars.
+        </p>
+    </div>
+
+    <div class="box-mars">
+        <h2 ;"> Atmosphere & Temperature</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            Mars has a thin atmosphere, made mostly of carbon dioxide, with smaller amounts of nitrogen and argon.
+            Because the atmosphere is so thin, Mars cannot retain heat as effectively as Earth, resulting in very cold
+            temperatures. The planet can experience dramatic temperature changes, and temperatures near the surface can
+            fall far below freezing. Mars also has weather, including clouds, winds, dust storms, and enormous dust
+            storms that can sometimes spread across much of the planet.
+        </p>
+    </div>
+
+    <div class="box-mars">
+        <h4>What's your weight on Mars ?</h4>
+        <input type="number" id="theNumber" size="10" />
+        <button id="weight">Confirm</button>
+        <p id="weight-display"></p>
+        <script>
+            const button = document.getElementById("weight");
+            button.addEventListener("click", convertWeight);
+            function convertWeight() {
+                const weight = document.getElementById("theNumber").value;
+                const text = document.getElementById("weight-display");
+                text.innerHTML = "You would weigh: " + Math.round(weight * 0.377 * 10) / 10 + " lbs on Mars";
+            }
+        </script>
+    </div>
+
+    <div class="box-mars">
+        <h2 ;"> Surface & Geography</h2>
+    </div>
+    <div id="textBox" style="background-color: #F5EDE3;">
+        <p>
+            One of Mars's most interesting features is its surface geography. It contains enormous volcanoes, deep
+            valleys, impact craters, and vast plains. Mars is home to Olympus Mons, the largest known volcano in the
+            Solar System. It is roughly 22 kilometers high, making it almost three times as tall as Mount Everest. Mars
+            also contains Valles Marineris, a gigantic canyon system stretching thousands of kilometers across the
+            planet. These features show that Mars was geologically active in the past.
+        </p>
+    </div>
+
+
+    <a href="test.html">Go back to the Solar System</a>
+
+</body>
+
+</html>
