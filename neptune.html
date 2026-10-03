@@ -23,19 +23,20 @@
     <body>
 
         <!-- header -->
-    <div class="box-neptune">
-        <div class="planet-header">
-            <a href="sun.html">Sun</a>
-            <a href="mercury.html">Mercury</a>
-            <a href="venus.html">Venus</a>
-            <a href="earth.html">Earth</a>
-            <a href="mars.html">Mars</a>
-            <a href="jupiter.html">Jupiter</a>
-            <a href="saturn.html">Saturn</a>
-            <a href="uranus.html">Uranus</a>
-            <a href="neptune.html">Neptune</a>
+        <div class="box-neptune">
+            <div class="planet-header">
+                <a href="test.html">Solar System</a>
+                <a href="sun.html">Sun</a>
+                <a href="mercury.html">Mercury</a>
+                <a href="venus.html">Venus</a>
+                <a href="earth.html">Earth</a>
+                <a href="mars.html">Mars</a>
+                <a href="jupiter.html">Jupiter</a>
+                <a href="saturn.html">Saturn</a>
+                <a href="uranus.html">Uranus</a>
+                <a href="neptune.html">Neptune</a>
+            </div>
         </div>
-    </div>
 
         <h1>Neptune</h1>
 
@@ -79,7 +80,7 @@
             </ul>
         </div>
 
-        
+
         <div class="box-neptune">
             <h4>What's your weight on Neptune ?</h4>
             <input type="number" id="theNumber" size="10" />
@@ -109,7 +110,30 @@
             </p>
         </div>
 
+        <div class="box-neptune">
+            <h4>Visit a random planet !</h4>
+            <button id="random">Take me away !</button>
+            <p id="weight-display"></p>
+            <script>
+                const planets = [
+                    "sun",
+                    "mars",
+                    "earth",
+                    "jupiter",
+                    "mercury",
+                    "neptune",
+                    "saturn",
+                    "uranus",
+                    "venus"
+                ];
 
+                document.getElementById("random").addEventListener("click", function () {
+                    let planet = planets[Math.floor(Math.random() * planets.length)];
+
+                    window.location.href = planet + ".html";
+                });
+            </script>
+        </div>
         <a href="test.html">Go back to the Solar System</a>
 
     </body>

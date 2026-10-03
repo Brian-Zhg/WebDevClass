@@ -15,6 +15,7 @@
 <!-- header -->
 <div class="box-sun">
     <div class="planet-header">
+        <a href="test.html">Solar System</a>
         <a href="sun.html">Sun</a>
         <a href="mercury.html">Mercury</a>
         <a href="venus.html">Venus</a>
@@ -111,6 +112,31 @@
         where nuclear fusion produces the energy that powers the Sun.
     </p>
 </div>
+
+<div class="box-sun">
+        <h4>Visit a random planet !</h4>
+        <button id="random">Take me away !</button>
+        <p id="weight-display"></p>
+        <script>
+        const planets = [
+            "sun",
+            "mars",
+            "earth",
+            "jupiter",
+            "mercury",
+            "neptune",
+            "saturn",
+            "uranus",
+            "venus"
+        ];
+
+        document.getElementById("random").addEventListener("click", function() {
+            let planet = planets[Math.floor(Math.random() * planets.length)];
+
+            window.location.href = planet + ".html";
+        });
+    </script>
+    </div>
 
 <a href="test.html">Go back to the Solar System</a>
 
