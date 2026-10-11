@@ -101,25 +101,42 @@
         <button id="random">Take me away !</button>
         <p id="weight-display"></p>
         <script>
-        const planets = [
-            "sun",
-            "mars",
-            "earth",
-            "jupiter",
-            "mercury",
-            "neptune",
-            "saturn",
-            "uranus",
-            "venus"
-        ];
+            const planets = [
+                "sun",
+                "mars",
+                "earth",
+                "jupiter",
+                "mercury",
+                "neptune",
+                "saturn",
+                "uranus",
+                "venus"
+            ];
 
-        document.getElementById("random").addEventListener("click", function() {
-            let planet = planets[Math.floor(Math.random() * planets.length)];
+            document.getElementById("random").addEventListener("click", function () {
+                let planet = planets[Math.floor(Math.random() * planets.length)];
 
-            window.location.href = planet + ".html";
-        });
-    </script>
+                window.location.href = planet + ".html";
+            });
+        </script>
     </div>
+    <div class="container">
+        <button class="stopper" id="stop">Stop Animation</button>
+    </div>
+
+    <script>
+        document.getElementById("stop").addEventListener("click", function () {
+            let rocket = document.getElementById("rocket");
+            if (rocket.style.animationPlayState === "paused") {
+                rocket.style.animationPlayState = "running";
+            }
+            else {
+                rocket.style.animationPlayState = "paused";
+            }
+        })
+    </script>
+
+    <img class="a-pulse" id="rocket" src="images/rocket.png">
     <a href="test.html">Go back to the Solar System</a>
 
 </body>
